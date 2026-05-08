@@ -14,7 +14,7 @@
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	sumario=abnt-6027-2012, %sumario todo alinhado a esquerda: abnt-6027-2012 ; sumario mais bonitinho: tradicional
-	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	chapter=TITLE, 	% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 	%subsubsection=TITLE,% títulos de subseções convertidos em letras maiúsculas
@@ -59,6 +59,19 @@
 \usepackage{subcaption}
 \usepackage[section]{placeins}
 \usepackage{bm}
+\usepackage{titlesec}
+
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize}
+{\thesubsubsection}
+{1em}
+{}
+
+\titlespacing*{\subsubsection}
+{0pt}
+{1.5ex plus .2ex}
+{1ex}
 
 
 % ---
@@ -97,7 +110,9 @@
 \autor{JENNIFER MIKAELLA FERREIRA MELO}
 \local{MACEIÓ/AL}
 \data{2026}
-\orientador{Prof. Dr. João Paulo Lima Santos}
+\orientador{Prof. Dr. João Paulo Lima Santos
+Coorientadora: PhD. Beatriz Ramos Barbos}
+
 \instituicao{%
   UNIVERSIDADE FEDERAL DE ALAGOAS -- UFAL
   \par
@@ -155,7 +170,7 @@
 \checkandfixthelayout
 % Lista de Figuras ao invés de Lista de Ilustrações
 \addto\captionsbrazil{%
-	\renewcommand{\listfigurename}{Lista de Figuras}
+%	\renewcommand{\listfigurename}{Lista de Figuras}
 }
 % Fonte 12 nos capítulos
 \renewcommand{\ABNTEXchapterfontsize}{\normalfont}
@@ -265,38 +280,40 @@ ESTRUTURAS\\
 %% Agradecimentos
 %% ---
 %\begin{agradecimentos}
- \noindent{A meus pais, por me ensinarem a buscar meus objetivos.}
+% \noindent{Agradecimento}
  
- \noindent{A Paula, por participar comigo de todos os momentos dessa vitória.}
+% \noindent{Agradecimento}
  
- \noindent{Ao professor William Lira, pela orientação em todas as pesquisas.}
+% \noindent{Agradecimento}
  
- \noindent{Ao professor Eduardo Toledo, pelo auxílio nas muitas solicitações que fiz ao PPGEC.}
+% \noindent{Agradecimento}
  
- \noindent{Aos colegas do LCCV Ricardo e Catarina Fernandes, Lucas Gouveia e Tiago Lobo pelo apoio no desenvolvimento do trabalho.}
+% \noindent{Agradecimento}
  
- \noindent{Ao colega Romildo Escarpini, pelas muitas discussões e pelo apoio durante toda a dissertação.}
+% \noindent{Agradecimento}
  
- \noindent{Ao CNPq, pela bolsa dispensada.}
+% \noindent{Agradecimento}
+ 
  
 %\end{agradecimentos}
 
  %\begin{epigrafe}
  	
- 	\vspace*{\fill}
- 	\begin{flushright}
- 		\textit{“The mind itself has no needs, except for those it creates itself. Is undisturbed, except for its own disturbances. Knows no obstructions, except those from within” \\ }
- 		\vspace{1cm}
- 		\textit{Marcus Aurelius - Meditations}
- 	\end{flushright}
+ %	\vspace*{\fill}
+ %	\begin{flushright}
+ %		\textit{“The mind itself has no needs, except for those it creates itself. Is undisturbed, except for its own disturbances. Knows no obstructions, except those from within” \\ }
+% 		\vspace{1cm}
+ %		\textit{Marcus Aurelius - Meditations}
+ %	\end{flushright}
  	
+
  %\end{epigrafe}
 %% ---
 
 % ---
 % RESUMOS
 % ---
-
+\newpage
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo} 
@@ -321,17 +338,17 @@ Texto do abstract
 % ---
 % inserir lista de ilustrações
 % ---
-\pdfbookmark[0]{\listfigurename}{lof}
-\listoffigures*
-\cleardoublepage
+%\pdfbookmark[0]{\listfigurename}{lof}
+%\listoffigures*
+%\cleardoublepage
 % ---
 
 % ---
-% inserir lista de tabelas
+% inserir lista de s
 % ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
-\cleardoublepage
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
 % ---
 
 %% ---
@@ -384,7 +401,7 @@ Texto do abstract
 \tableofcontents*
 \cleardoublepage
 % ---
-
+\renewcommand{\ABNTEXchapterfontsize}{\bfseries\normalsize}
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
@@ -400,7 +417,7 @@ Texto do abstract
 
 \include{diss_cap5}
 
-% \include{diss_cap6}
+\include{diss_cap6}
 
 \include{diss_cap7}
 

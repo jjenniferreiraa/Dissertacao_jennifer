@@ -5,9 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Ceccato et al. 2021]{ceccato2021two}
-\abntrefinfo{Ceccato et al.}{CECCATO et al.}{2021}
-{CECCATO, F. et al. Two-phase dynamic mpm formulation for unsaturated soil.
-\emph{Computers and Geotechnics}, Elsevier, v.~129, p. 103876, 2021.}
+\bibitem[Albuquerque 2025]{Albuquerque2025}
+\abntrefinfo{Albuquerque}{ALBUQUERQUE}{2025}
+{ALBUQUERQUE, R.~D. de A.
+\emph{MODELAGEM DA CRAVAÇÃO DE UM REVESTIMENTO CONDUTOR VIA MÉTODO DOS
+  PONTOS MATERIAIS}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Rio de Janeiro, 9
+  2025.}
 
 \end{thebibliography}

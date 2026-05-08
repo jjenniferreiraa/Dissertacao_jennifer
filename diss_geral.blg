@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diss_geral.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
@@ -11,6 +11,8 @@ Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: diss_cap4.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: diss_cap5.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: diss_cap6.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: diss_cap7.aux
 Reallocating 'name_of_file' (item size: 1) to 16 items.
@@ -39,42 +41,42 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 4 entries,
             6714 wiz_defined-function locations,
-            1213 strings with 9630 characters,
-and the built_in function-call counts, 2399 in all, are:
-= -- 280
-> -- 45
-< -- 6
-+ -- 64
-- -- 15
-* -- 125
-:= -- 339
+            1212 strings with 9650 characters,
+and the built_in function-call counts, 1937 in all, are:
+= -- 246
+> -- 18
+< -- 3
++ -- 53
+- -- 8
+* -- 88
+:= -- 294
 add.period$ -- 3
 call.type$ -- 5
-change.case$ -- 23
-chr.to.int$ -- 17
+change.case$ -- 15
+chr.to.int$ -- 14
 cite$ -- 1
-duplicate$ -- 67
-empty$ -- 199
-format.name$ -- 61
-if$ -- 601
+duplicate$ -- 41
+empty$ -- 180
+format.name$ -- 23
+if$ -- 481
 int.to.chr$ -- 2
 int.to.str$ -- 3
-missing$ -- 49
-newline$ -- 13
+missing$ -- 47
+newline$ -- 14
 num.names$ -- 5
-pop$ -- 58
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 12
 quote$ -- 0
-skip$ -- 244
+skip$ -- 218
 stack$ -- 1
-substring$ -- 89
-swap$ -- 33
-text.length$ -- 2
+substring$ -- 64
+swap$ -- 13
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 4
 warning$ -- 0
-while$ -- 9
+while$ -- 7
 width$ -- 0
-write$ -- 25
+write$ -- 23
