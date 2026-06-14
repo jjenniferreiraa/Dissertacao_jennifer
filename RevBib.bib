@@ -29,7 +29,7 @@
    volume = {135},
    year = {2021}
 }
-@article{Zambrano-Cruzatty2020,
+@article{Zambrano2020,
    abstract = {Free Fall Penetrometer (FFP) testing consist of a torpedo-shaped body freefalling into a soil target. The use of this type of device is becoming popular for the characterization of shallow sediments in near-shore and off-shore environments because it is a fast, versatile, and non-expensive test capable of recording acceleration and pore pressures. In recent years, the data analysis advanced considerably, but the soil behavior during fast penetration is still uncertain. Hence, there is a need to develop numerical models capable of simulating this process to improve its understanding. This paper proposes a numerical framework to simulate the deployment of an FFP device in dry sands using the Material Point Method (MPM). A moving mesh technique is used to ensure the accurate geometry of the FFP device throughout the calculation, and the soil-FFP interaction is modelled with a frictional contact algorithm. Moreover, a rigid body algorithm is proposed to model the FFP device, which enhances the performance of the computation and reduces its computational cost. The sand is simulated by using two constitutive models, a non-associate Mohr-Coulomb (MC) and a Strain-Softening Mohr-Coulomb (SSMC) that reduces, exponentially, the strength parameters with the accumulated plastic deviatoric deformation (Yerro et al., 2016). Variable dilatancy, which reduces as a function of the plastic strain, is also taken into account, and the strain-rate effects have been evaluated in terms of peak friction angle. In general, the behavior predicted by the MPM simulations is consistent with the experimental test. The results indicate that the soil stiffness has a big impact on the deceleration time-history and the development of a failure mechanism, but less influence on the magnitude of the peak deceleration and the penetration depth; the soil dilatancy reduces the FFP rebound, and the FFP-soil contact friction angle and the peak friction angle are highly linked to the peak deceleration.},
    author = {Luis Zambrano-Cruzatty and Alba Yerro},
    doi = {10.1016/j.sandf.2020.04.002},
@@ -209,7 +209,7 @@
    volume = {43},
    year = {2019}
 }
-@book{IssamKJAl-Kafaji2013,
+@book{alkafaji2013,
    author = {Issam K. J. Al-Kafaji},
    isbn = {9789053357057},
    title = {Formulation of a Dynamic Material Point Method (MPM) for Geomechanical Problems},
@@ -312,7 +312,7 @@
    volume = {16},
    year = {2024}
 }
-@techReport{Tenrio2024,
+@techReport{Tenorio2024,
    abstract = {The initial phases of well drilling projects involve the crucial step of installing conductor casing, which can be achieved through various methods, including conductor driving. Given the often-challenging environmental conditions, conducting experimental analyses of drilling parameters becomes impractical. Consequently, numerical modeling emerges as a feasible and reliable alternative for process control. In this study, the open-source software ANURA 3D was adopted, which utilizes the Material Point Method (MPM) in its solutions. Therefore, this research aims to explore the impact of some numerical parameters associated with computational modeling on problem solution. For this purpose, a two-dimensional axisymmetric computational model of self-weight penetration was employed. In this work, the influence of material point specification and time step size was analyzed. Increasing material point specification provided results for vertical displacement and tension distribution; however, beyond a certain point, the results do not show any significant differences, only an increase in computational costs. It was also observed that, for the time step sizes considered in this analysis, no significant differences could be noted, despite minor time step increase accuracy of results.},
    author = {Mávyla Sandreya Correia Tenório and Jennifer Mikaella Ferreira Melo and Beatriz Ramos Barboza and Raniel Deivisson de Alcantara Albuquerque and João Paulo Lima Santos and Fábio Sawada Cutrim and Rafael Dias},
    doi = {https://doi.org/10.55592/cilamce.v6i06.8222},
@@ -454,4 +454,120 @@
   author={Thomas, Jos{\'e} Eduardo},
   year={2001},
   publisher={Interci{\^e}ncia}
+}
+
+@inproceedings{martinelli2020,
+  title={Numerical simulation of the installation of suction buckets using MPM},
+  author={Martinelli, M and Alderlieste, E and Luger, D and Galavi, V},
+  booktitle={Proc., 4th Int. Symp. on Frontiers in Offshore Geotechnics (ISFOG 2020 in 2022). Hawthorne, NJ: Deep Foundations Institute},
+  year={2020}
+}
+
+@article{bardenhagen2001,
+  title={An improved contact algorithm for the material point method and application to stress propagation in granular material},
+  author={Bardenhagen, SG and Guilkey, James Edward and Roessig, KM and Brackbill, JU and Witzel, WM and Foster, JC},
+  journal={Computer Modeling in Engineering \& Sciences},
+  volume={2},
+  number={4},
+  pages={509},
+  year={2001},
+  publisher={Tech Science Press}
+}
+
+@techReport{Tenorio2025,
+   abstract = {The installation of conductor casing is a critical step in offshore oil well construction, providing structural support. Numerical simulations are essential for optimizing this process, however, challenges such as large soil deformations require advanced methods, such as the Material Point Method (MPM). While MPM has proven effective for large-deformation geotechnical problems, its conventional formulation faces limitations in stress accuracy. To address these challenges, this study evaluates the driving of conductor casing using two numerical methods: pure MPM and MPM-Mixed Integration (MPM with Gauss integration). The soil is modeled via the Mohr-Coulomb criterion, with geotechnical parameters derived from real data from the Campos Basin in Brazil. Results show that MPM-Mixed Integration provides superior stability under large deformations, reducing numerical problems and improving stress distribution accuracy.},
+   author = {Mávyla Sandreya Correia Tenorio and João Paulo Lima Santos and Rafael Dias},
+   doi = {https://doi.org/10.55592/cilamce2025.v5i.14497},
+   keywords = {Conductor Casing,Impact Driving,Material Point Method,Mixed Integration Scheme,Numerical Simulation},
+   month = {11},
+   title = {Comparison of Pure and Mixed Integration Schemes in Material Point Method Simulations of Hammer-Driven Conductor Casing Installation in Undrained Cohesive Soils},
+   year = {2025}
+}
+
+@article{akers2008,
+  title={Jetting of structural casing in deepwater environments: job design and operational practices},
+  author={Akers, Thomas Jay},
+  journal={SPE Drilling \& Completion},
+  volume={23},
+  number={01},
+  pages={29--40},
+  year={2008},
+  publisher={OnePetro}
+}
+
+
+@proceedings{nogueira2005,
+    author = {Nogueira, E.F. and Borges, A.T. and Junior, C.J.M. and Machado, R.D.},
+    title = {Torpedo Base - A New Conductor Installation Process},
+    volume = {Offshore Technology Conference},
+    series = {OTC Offshore Technology Conference},
+    pages = {OTC-17197-MS},
+    year = {2005},
+    month = {05},
+    doi = {10.4043/17197-MS},
+    url = {https://doi.org/10.4043/17197-MS},
+    eprint = {https://onepetro.org/OTCONF/proceedings-pdf/05OTC/05OTC/OTC-17197-MS/1848796/otc-17197-ms.pdf},
+}
+
+@article{nogueira_base_torpedo,
+  author    = {Nogueira, E. F. and Borges, A. T. and Júnior, C. J. M. and others},
+  title     = {Base Torpedo: Um novo método para instalação do revestimento condutor},
+  journal   = {Boletim Técnico da Produção de Petróleo},
+  year      = {2008},
+  volume    = {3},
+  number    = {2},
+  pages     = {327--350},
+  address   = {Rio de Janeiro},
+  url       = {http://www.pbpublishing.com.br/uploads/PublishedContent/BPPT/V3/V3N2/10-Emmanuel_Nogueira.pdf},
+  note      = {Acesso em: 20 maio 2026}
+}
+
+
+@proceedings{vannoort2009,
+    author = {Van Noort, Roger and Murray, Rob and Wise, James and Williamson, Mark and Wilde, Bob and Riggs, John},
+    title = {Conductor Pre-Installation, Deepwater Brazil},
+    volume = {Offshore Technology Conference},
+    series = {OTC Offshore Technology Conference},
+    pages = {OTC-20005-MS},
+    year = {2009},
+    month = {05},
+    doi = {10.4043/20005-MS},
+    url = {https://doi.org/10.4043/20005-MS},
+    eprint = {https://onepetro.org/OTCONF/proceedings-pdf/09OTC/09OTC/OTC-20005-MS/1759758/otc-20005-ms.pdf},
+}
+
+@inproceedings{robert2015,
+	title={Soil constitutive models to simulate pipeline-soil interaction behaviour},
+	author={Robert, DJ and Soga, Kenichi and Britto, AM},
+	booktitle={International Conference on Geotechnical Engineering ICGE Colombo},
+	pages={347--350},
+	year={2015}
+}
+
+@article{cecilio2014,
+	title={Modelagem Elastopl{\'a}stica Aplicada {\`a} Simula{\c{c}}{\~a}o Num{\'e}rica da Estabilidade de Po{\c{c}}os de Petr{\'o}leo},
+	author={Cec{\'\i}lio, Diogo Lira},
+	journal={Universidade Estadual de Campinas},
+	year={2014}
+}
+
+@article{roscoe1958,
+	author = {Roscoe, K. and Schofield, Andrew and Wroth, C.},
+	year = {1958},
+	month = {01},
+	pages = {22-53},
+	title = {On The Yielding of Soils},
+	volume = {8},
+	journal = {Geotechnique},
+	doi = {10.1680/geot.1958.8.1.22}
+}
+
+@article{kok2009,
+	author = {Kok, Sien and Ti, and Huat, Bujang and Noorzaei, Jamaloddin and Jaafar, Saleh},
+	year = {2009},
+	month = {01},
+	pages = {},
+	title = {A Review of Basic Soil Constitutive Models for Geotechnical Application},
+	volume = {14},
+	journal = {Electronic Journal of Geotechnical Engineering}
 }
