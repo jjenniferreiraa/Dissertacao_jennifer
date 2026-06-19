@@ -96,7 +96,7 @@ Os solos apresentam um comportamento mecânico complexo, caracterizado por respo
 
 Nesse contexto, os modelos constitutivos desempenham papel fundamental na análise geotécnica, uma vez que fornecem uma representação matemática da relação entre tensões e deformações do material sob diferentes condições de carregamento. Ao longo dos anos, diversos modelos foram propostos com diferentes níveis de complexidade, desde critérios clássicos de resistência, como o modelo de Mohr-Coulomb, até formulações mais avançadas capazes de representar aspectos do comportamento elastoplástico dos solos, como os modelos da família Cam-Clay. A escolha do modelo constitutivo adequado depende do problema analisado, das características do material e do nível de precisão desejado, bem como dos dados disponíveis para a elaboração do problema. 
 
-\section{Mohr-Coulomb}
+\subsection{Mohr-Coulomb}
 
 O modelo de Mohr-Coulomb é um dos modelos constitutivos mais empregados em análises geotécnicas devido à sua simplicidade de implementação e ao reduzido número de parâmetros necessários para sua calibração. Trata-se de um modelo elastoplástico perfeito, no qual o material apresenta comportamento elástico até que a condição de ruptura seja atingida. Apesar de representar uma aproximação simplificada do comportamento dos solos, o modelo é frequentemente adotado como uma aproximação de primeira ordem para a representação do comportamento dos solos \cite{kok2009}. 
 
@@ -262,7 +262,7 @@ O esquema de integração explícita utilizado no MPM é condicionalmente estáv
 
 Com o objetivo de minimizar os efeitos das deformações impostas pela movimentação da estrutura sobre os elementos da malha, emprega-se a técnica de malha móvel. Essa abordagem explora uma das principais características do MPM: a malha computacional atua apenas como suporte temporário para os cálculos numéricos, enquanto as informações permanentes do material permanecem armazenadas nos pontos materiais \cite{Ceccato2022}. Assim, após cada passo de tempo, a região da malha adjacente à estrutura é reposicionada de acordo com seu deslocamento, de modo que a interface entre a estrutura e a malha permaneça a mesma ao longo da simulação. Com isso, os elementos próximos à estrutura preservam sua geometria original, reduzindo problemas associados à distorção excessiva da malha \cite{Ceccato2017}. Nesse procedimento, a chamada malha móvel corresponde à região que acompanha o movimento da estrutura sem sofrer deformações significativas, enquanto os elementos situados entre essa região e as fronteiras fixas do domínio acomodam as deformações geradas durante a análise.
 
-\section{Parâmetros do solo}
+%\section{Parâmetros do solo}
 
 
-\section{Estado da arte}
+%\section{Estado da arte}
