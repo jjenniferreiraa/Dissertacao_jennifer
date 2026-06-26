@@ -3,3 +3,103 @@
 \section{Modelo numérico}
 
 \section{Propriedades dos materiais}
+
+	A definição adequada das propriedades dos materiais e dos parâmetros do modelo constitutivo é essencial para garantir a representatividade das simulações numéricas. Assim, de acordo com os dados de resistência à compressão foi possível classificar o solo como uma argila muito mole, considerando-se o critério adotado por \citet{maragon2008}.
+
+Os dados de ensaio CPTu utilizados são disponibilizados pela operadora, a partir dos quais constatou-se que o modelo constitutivo de Mohr-Coulomb seria adequado para modelar a resposta do solo. A Tabela \ref{tab:propriedades_crav} contém as propriedades dos materiais considerados para modelar o solo coesivo não drenado em questão.
+
+\begin{table}[H]
+	\centering
+	\footnotesize % Reduz tamanho da fonte
+	\renewcommand{\arraystretch}{1.2} % Aumenta espaçamento entre linhas
+	\setlength{\tabcolsep}{4pt} % Ajusta espaçamento entre colunas
+	\begin{tabular}{|cccccc|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Propriedades}}} &
+		\multicolumn{4}{c|}{\textbf{Valor}} &
+		\multirow{2}{*}{\textbf{Unidade}} \\ \cline{2-5}
+		\multicolumn{1}{|c|}{} &
+		\multicolumn{1}{c|}{Camda 1} &
+		\multicolumn{1}{c|}{Camada 2} &
+		\multicolumn{1}{c|}{Camada 3} &
+		\multicolumn{1}{c|}{Camada 4} &
+		\\ \hline
+		\multicolumn{1}{|c|}{\textbf{Classificação}} &
+		\multicolumn{1}{c|}{Argila muito mole} &
+		\multicolumn{1}{l|}{Argila muito mole} &
+		\multicolumn{1}{l|}{Argila mole} &
+		\multicolumn{1}{l|}{Argila média} &
+		\multicolumn{1}{l|}{} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Porosidade inicial}} &
+		\multicolumn{1}{c|}{0.58} &
+		\multicolumn{1}{c|}{0.58} &
+		\multicolumn{1}{c|}{0.47} &
+		\multicolumn{1}{c|}{0.43} &
+		- \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Densidade}} &
+		\multicolumn{1}{c|}{1,475.40} &
+		\multicolumn{1}{c|}{1,687.91} &
+		\multicolumn{1}{c|}{1,799.32} &
+		\multicolumn{1}{c|}{1,838.82} &
+		Kg/m³ \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Coeficiente de Poisson \linebreak efetivo}} &
+		\multicolumn{1}{c|}{0.49} &
+		\multicolumn{1}{c|}{0.49} &
+		\multicolumn{1}{c|}{0.45} &
+		\multicolumn{1}{c|}{0.40} &
+		- \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Valor de K0}} &
+		\multicolumn{1}{c|}{0.96} &
+		\multicolumn{1}{c|}{0.96} &
+		\multicolumn{1}{c|}{0.82} &
+		\multicolumn{1}{c|}{0.67} &
+		- \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Módulo de elasticidade efetivo}} &
+		\multicolumn{1}{c|}{17,896.07} &
+		\multicolumn{1}{c|}{27,823.35} &
+		\multicolumn{1}{c|}{60,440.32} &
+		\multicolumn{1}{c|}{83,865.38} &
+		kPa \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Coesão efetiva}} &
+		\multicolumn{1}{c|}{9,27} &
+		\multicolumn{1}{c|}{36.23} &
+		\multicolumn{1}{c|}{93.95} &
+		\multicolumn{1}{c|}{148.92} &
+		kPa \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Ângulo de atrito efetivo}} &
+		\multicolumn{1}{c|}{36.29} &
+		\multicolumn{1}{c|}{37.99} &
+		\multicolumn{1}{c|}{40.35} &
+		\multicolumn{1}{c|}{37.63} &
+		graus \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Ângulo de atrito (contato)}} &
+		\multicolumn{1}{c|}{0.43} &
+		\multicolumn{1}{c|}{0.44} &
+		\multicolumn{1}{c|}{0.47} &
+		\multicolumn{1}{c|}{0.44} &
+		rad \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Fator de adesão}} &
+		\multicolumn{1}{c|}{4.64} &
+		\multicolumn{1}{c|}{18.12} &
+		\multicolumn{1}{c|}{46.97} &
+		\multicolumn{1}{c|}{74.46} &
+		kPa \\ \hline
+		\multicolumn{6}{|c|}{\textbf{Água}} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Densidade}} &
+		\multicolumn{4}{c|}{1000} &
+		Kg/m³ \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Permeabilidade intrínseca}} &
+		\multicolumn{4}{c|}{1.0214x10-9} &
+		m³/s \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Módulo volumétrico}} &
+		\multicolumn{4}{c|}{2.15x104} &
+		kPa \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Viscosidade dinâmica}} &
+		\multicolumn{4}{c|}{1.5673x10-6} &
+		kPa   s \\ \hline
+	\end{tabular}
+	\caption{Propriedades utilizadas para modelar o solo coesivo não drenado}
+	\label{tab:propriedades_crav}
+\end{table}
+
+No modelo, o revestimento condutor possui propriedades do aço é considerado como um corpo rígido, com densidade de 7860 kg/m³.   
